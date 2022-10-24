@@ -16,9 +16,7 @@ SETSTATUS="duskc --ignore-reply run_command setstatus"
 
 # do these first as they are not done frequently
 
-$SETSTATUS 1 "$(/usr/local/bin/d-sb-updates)" &
 $SETSTATUS 2 "$(/usr/local/bin/d-sb-vol)" &
-$SETSTATUS 4 "$(/usr/local/bin/d-sb-disk)" &
 
 secs=0
 while true; do
